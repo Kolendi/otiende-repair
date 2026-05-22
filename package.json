@@ -1,0 +1,13 @@
+{
+  "name": "otiende-repair",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static website for Otiende Appliance Repair & Cooling Systems.",
+  "scripts": {
+    "build": "tailwindcss -i ./src/input.css -o ./dist/styles.css --minify",
+    "watch": "tailwindcss -i ./src/input.css -o ./dist/styles.css --watch"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.4"
+  }
+}

@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Otiende Appliance Repair & Cooling Systems offers fast, professional repair and diagnostics for refrigerators, washing machines, cookers, AC units, and commercial cooling systems in Nairobi.">
+    <title>Otiende Appliance Repair & Cooling Systems</title>
+    <!-- Compiled Tailwind CSS -->
+    <link rel="stylesheet" href="dist/styles.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght=300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-brand-primary selection:text-white">
+
+    <!-- Top Bar -->
+    <div class="bg-brand-deep text-white text-xs py-2 px-4 sm:px-6 lg:px-8 flex justify-between items-center border-b border-slate-800">
+        <div class="flex items-center space-x-4">
+            <a href="tel:0793617935" class="flex items-center gap-1.5 text-slate-300 hover:text-brand-primary transition">
+                <i data-lucide="phone" class="w-3.5 h-3.5 text-brand-accent"></i>
+                <span>0793617935</span>
+            </a>
+            <span class="hidden md:flex items-center gap-1.5 text-slate-300">
+                <i data-lucide="clock" class="w-3.5 h-3.5 text-brand-accent"></i>
+                <span>24/7 Professional Diagnostics Available</span>
+            </span>
+        </div>
+        <div class="flex items-center space-x-3">
+            <span class="text-slate-400 hidden sm:inline">Follow us:</span>
+            
+            <!-- Facebook Link -->
+            <a href="https://www.facebook.com/derryrefrigeration" target="_blank" rel="noopener noreferrer" class="hover:text-brand-primary transition flex items-center" title="Facebook">
+                <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 512 512">
+                    <path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/>
+                </svg>
+            </a>
+
+            <!-- TikTok Link (Updated) -->
+            <a href="https://www.tiktok.com/@derryrefrigeration?_r=1&_t=ZS-96YIWGDHtGE" target="_blank" rel="noopener noreferrer" class="hover:text-brand-primary transition flex items-center" title="TikTok">
+                <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24">
+                    <path d="M12.53.02C13.84 0 15.14.01 16.44 0c.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.17-2.89-.74-3.94-1.74-.22-.23-.42-.48-.6-.74-.06 2.72-.01 5.43-.03 8.15-.07 2.26-.71 4.58-2.31 6.22-1.71 1.89-4.39 2.6-6.87 2.05-2.65-.54-4.94-2.58-5.46-5.23-.74-3.44 1.16-7.23 4.54-8.21.84-.26 1.73-.34 2.6-.26V10.5c-1.63-.12-3.32.48-4.27 1.84-.91 1.25-.99 3.01-.27 4.4 1 1.85 3.32 2.64 5.25 1.79 1.1-.47 1.81-1.57 1.82-2.76.01-3.69-.01-7.39-.01-11.09-.59-.02-1.18-.11-1.76-.28-1.54-.48-2.69-1.93-2.91-3.52-.04-.29-.05-.59-.05-.88h4.15z"/>
+                </svg>
+            </a>
+
+            <!-- Instagram Link with custom uploaded SVG -->
+            <a href="https://www.instagram.com/ochiengwicklife01?igsh=MXVpdnBkMDF2cWY0dQ==" target="_blank" rel="noopener noreferrer" class="hover:text-brand-primary transition flex items-center" title="Instagram">
+                <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 448 512">
+                    <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/>
+                </svg>
+            </a>
+
+            <!-- X (formerly Twitter) Link (Updated) -->
+            <a href="https://x.com/wicklif96137752" target="_blank" rel="noopener noreferrer" class="hover:text-brand-primary transition flex items-center" title="X (Twitter)">
+                <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24">
+                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                </svg>
+            </a>
+
+            <!-- YouTube Link -->
+            <a href="https://youtube.com/@derryrefrigeration?si=RRFpPk6nGo4krLOm" target="_blank" rel="noopener noreferrer" class="hover:text-brand-primary transition flex items-center" title="YouTube">
+                <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24">
+                    <path d="M23.498 6.163a3.003 3.003 0 0 0-2.11-2.107C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.388.511a3.003 3.003 0 0 0-2.11 2.107C0 8.046 0 12 0 12s0 3.954.502 5.837a3.003 3.003 0 0 0 2.11 2.107c1.883.511 9.388.511 9.388.511s7.505 0 9.388-.511a3.003 3.003 0 0 0 2.11-2.107C24 15.954 24 12 24 12s0-3.954-.502-5.837zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                </svg>
+            </a>
+        </div>
+    </div>
+
+    <!-- Navigation Header -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur shadow-sm border-b border-slate-100">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Logo / Brand Title -->
+            <a href="#" class="flex items-center space-x-2">
+                <div class="w-10 h-10 rounded-lg bg-brand-primary flex items-center justify-center text-white shadow-md shadow-brand-primary/20">
+                    <i data-lucide="wrench" class="w-5 h-5"></i>
+                </div>
+                <div>
+                    <span class="block text-lg font-extrabold tracking-tight text-brand-deep leading-none">OTIENDE</span>
+                    <span class="text-xs font-semibold text-brand-primary tracking-wider uppercase">Appliance & Cooling</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav Links -->
+            <div class="hidden md:flex items-center space-x-8 font-medium text-slate-600">
+                <a href="#services" class="hover:text-brand-primary transition">Our Services</a>
+                <a href="#gallery" class="hover:text-brand-primary transition">Repair Gallery</a>
+                <a href="#about" class="hover:text-brand-primary transition">About Us</a>
+                <a href="#booking" class="hover:text-brand-primary transition">Request Diagnostic</a>
+                <a href="#contact" class="hover:text-brand-primary transition">Contact</a>
+            </div>
+
+            <!-- Header Action Button -->
+            <div class="hidden md:flex items-center space-x-4">
+                <a href="https://wa.me/254793617935" target="_blank" class="inline-flex items-center justify-center px-4 py-2.5 rounded-lg text-sm font-semibold bg-emerald-500 hover:bg-emerald-600 text-white transition gap-2 shadow-md shadow-emerald-500/10">
+                    <i data-lucide="message-circle" class="w-4 h-4"></i>
+                    <span>WhatsApp Chat</span>
+                </a>
+            </div>
+
+            <!-- Mobile Menu Toggle Button -->
+            <button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg text-slate-600 hover:bg-slate-100 focus:outline-none">
+                <i data-lucide="menu" id="menu-icon" class="w-6 h-6"></i>
+            </button>
+        </nav>
+
+        <!-- Mobile Drawer Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-100 py-4 px-6 space-y-3 shadow-lg absolute left-0 w-full">
+            <a href="#services" class="block py-2 font-medium text-slate-600 hover:text-brand-primary transition" onclick="toggleMenu()">Our Services</a>
+            <a href="#gallery" class="block py-2 font-medium text-slate-600 hover:text-brand-primary transition" onclick="toggleMenu()">Repair Gallery</a>
+            <a href="#about" class="block py-2 font-medium text-slate-600 hover:text-brand-primary transition" onclick="toggleMenu()">About Us</a>
+            <a href="#booking" class="block py-2 font-medium text-slate-600 hover:text-brand-primary transition" onclick="toggleMenu()">Request Diagnostic</a>
+            <a href="#contact" class="block py-2 font-medium text-slate-600 hover:text-brand-primary transition" onclick="toggleMenu()">Contact</a>
+            <div class="pt-4 border-t border-slate-100">
+                <a href="https://wa.me/254793617935" target="_blank" class="w-full inline-flex items-center justify-center px-4 py-3 rounded-lg text-base font-semibold bg-emerald-500 text-white transition gap-2">
+                    <i data-lucide="message-circle" class="w-5 h-5"></i>
+                    <span>Chat on WhatsApp</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative overflow-hidden bg-gradient-to-br from-brand-deep to-slate-900 text-white py-20 lg:py-28 px-4 sm:px-6 lg:px-8">
+        <!-- Decorative grid patterns -->
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#0284c7_1px,transparent_1px)] [background-size:16px_16px]"></div>
+        <div class="absolute right-0 top-1/4 w-96 h-96 rounded-full bg-brand-primary/20 blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            <!-- Hero Left: Headline and Paragraph -->
+            <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                <div class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-brand-primary/20 border border-brand-primary/30 text-brand-primary text-xs font-semibold tracking-wider uppercase mb-2">
+                    <i data-lucide="sparkles" class="w-3.5 h-3.5"></i>
+                    Professional Engineering & Technical Support
+                </div>
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">
+                    Reliable Solutions for <span class="text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-emerald-400">Appliances & Cooling</span>
+                </h1>
+                <p class="text-lg text-slate-300 max-w-2xl mx-auto lg:mx-0 leading-relaxed font-light">
+                    Otiende Appliance Repair & Cooling Systems provides world-class installation, professional diagnosis, and quick repairs for domestic and commercial machinery. Minimize downtime and extend appliance lifespan today.
+                </p>
+                <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
+                    <a href="#booking" class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 rounded-xl text-base font-bold bg-brand-primary hover:bg-sky-500 text-white transition-all transform hover:-translate-y-0.5 shadow-lg shadow-brand-primary/25 gap-2">
+                        <i data-lucide="calendar" class="w-5 h-5"></i>
+                        <span>Book Instant Repair</span>
+                    </a>
+                    <a href="tel:0793617935" class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 rounded-xl text-base font-bold bg-slate-800 hover:bg-slate-750 text-white border border-slate-700 hover:border-slate-600 transition gap-2">
+                        <i data-lucide="phone-call" class="w-5 h-5 text-brand-accent"></i>
+                        <span>Call 0793617935</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Hero Right: Interactive Callout/Stats Card -->
+            <div class="lg:col-span-5 bg-white/5 backdrop-blur-md rounded-2xl p-6 sm:p-8 border border-white/10 shadow-2xl relative">
+                <h3 class="text-xl font-bold mb-6 text-white flex items-center gap-2">
+                    <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-ping"></span>
+                    Our Professional Commitments
+                </h3>
+                <div class="space-y-4">
+                    <div class="flex items-start gap-3">
+                        <div class="p-2 rounded-lg bg-emerald-500/20 text-emerald-400 mt-1">
+                            <i data-lucide="check-circle" class="w-5 h-5"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-white">Quality Workmanship</h4>
+                            <p class="text-xs text-slate-300">Skilled diagnostics using high-quality components.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <div class="p-2 rounded-lg bg-sky-500/20 text-sky-400 mt-1">
+                            <i data-lucide="clock" class="w-5 h-5"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-white">Fast Response</h4>
+                            <p class="text-xs text-slate-300">Prompt responses to avoid breakdown delays.</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start gap-3">
+                        <div class="p-2 rounded-lg bg-amber-500/20 text-amber-400 mt-1">
+                            <i data-lucide="shield-check" class="w-5 h-5"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-white">Honest & Affordable Services</h4>
+                            <p class="text-xs text-slate-300">Fair transparent pricing; no hidden charges.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-6 pt-6 border-t border-white/10 flex items-center justify-between text-xs text-slate-400">
+                    <span>Expert Technicians</span>
+                    <span>•</span>
+                    <span>Extended Appliance Lifespan</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Grid Section -->
+    <section id="services" class="py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+            <h2 class="text-xs font-bold uppercase tracking-wider text-brand-primary">What We Do Best</h2>
+            <p class="text-3xl sm:text-4xl font-extrabold text-brand-deep">Domestic & Commercial Engineering Services</p>
+            <p class="text-slate-600">We offer specialized diagnosis, expert repairs, preventative maintenance, and high-standard installations across various devices.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Service 1: Cooling -->
+            <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                <div class="w-12 h-12 rounded-xl bg-sky-50 text-brand-primary flex items-center justify-center mb-6">
+                    <i data-lucide="thermometer-snowflake" class="w-6 h-6"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3 text-brand-deep">Refrigeration & Cooling</h3>
+                <p class="text-sm text-slate-600 mb-6 leading-relaxed">
+                    Professional diagnosis and servicing of cold rooms, commercial/domestic refrigerators, deep freezers, chillers, and display units.
+                </p>
+                <div class="flex justify-between items-center pt-4 border-t border-slate-50">
+                    <span class="text-xs font-semibold px-2.5 py-1 rounded bg-sky-50 text-brand-primary">Freezer / Chiller / Cold Room</span>
+                    <a href="#booking" onclick="selectServiceOption('Refrigeration & Cooling Systems')" class="text-xs font-bold text-brand-primary flex items-center gap-1 hover:underline">
+                        <span>Book Now</span>
+                        <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Service 2: Washing Machines & Dryers -->
+            <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                <div class="w-12 h-12 rounded-xl bg-violet-50 text-violet-600 flex items-center justify-center mb-6">
+                    <i data-lucide="cog" class="w-6 h-6"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3 text-brand-deep">Washing Machines & Dryers</h3>
+                <p class="text-sm text-slate-600 mb-6 leading-relaxed">
+                    Fixing spin issues, drum blockages, circuit errors, leaking issues, and deep electrical failures in modern washing complexes and tumble dryers.
+                </p>
+                <div class="flex justify-between items-center pt-4 border-t border-slate-50">
+                    <span class="text-xs font-semibold px-2.5 py-1 rounded bg-violet-50 text-violet-600">Washers & Spin Dryers</span>
+                    <a href="#booking" onclick="selectServiceOption('Washing Machines & Dryers')" class="text-xs font-bold text-violet-600 flex items-center gap-1 hover:underline">
+                        <span>Book Now</span>
+                        <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Service 3: Heating & Cookers -->
+            <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                <div class="w-12 h-12 rounded-xl bg-orange-50 text-brand-accent flex items-center justify-center mb-6">
+                    <i data-lucide="flame" class="w-6 h-6"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3 text-brand-deep">Cookers, Ovens & Microwaves</h3>
+                <p class="text-sm text-slate-600 mb-6 leading-relaxed">
+                    Reliable thermal coil replacements, gas jet adjustments, microwave magnetrons repairs, and thermostat calibration.
+                </p>
+                <div class="flex justify-between items-center pt-4 border-t border-slate-50">
+                    <span class="text-xs font-semibold px-2.5 py-1 rounded bg-orange-50 text-brand-accent">Electric & Gas Stoves</span>
+                    <a href="#booking" onclick="selectServiceOption('Cookers, Ovens & Microwaves')" class="text-xs font-bold text-brand-accent flex items-center gap-1 hover:underline">
+                        <span>Book Now</span>
+                        <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Service 4: AC Systems -->
+            <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                <div class="w-12 h-12 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center mb-6">
+                    <i data-lucide="wind" class="w-6 h-6"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3 text-brand-deep">Air Conditioning (AC)</h3>
+                <p class="text-sm text-slate-600 mb-6 leading-relaxed">
+                    Comprehensive AC installation, system gas recharging, high-level filter disinfection, and diagnostic motor sweeps.
+                </p>
+                <div class="flex justify-between items-center pt-4 border-t border-slate-50">
+                    <span class="text-xs font-semibold px-2.5 py-1 rounded bg-blue-50 text-blue-600">AC Units & Filters</span>
+                    <a href="#booking" onclick="selectServiceOption('Air Conditioners & AC Units')" class="text-xs font-bold text-blue-600 flex items-center gap-1 hover:underline">
+                        <span>Book Now</span>
+                        <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Service 5: Dispensers & Minor Tech -->
+            <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                <div class="w-12 h-12 rounded-xl bg-teal-50 text-teal-600 flex items-center justify-center mb-6">
+                    <i data-lucide="droplet" class="w-6 h-6"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3 text-brand-deep">Water Heaters & Dispensers</h3>
+                <p class="text-sm text-slate-600 mb-6 leading-relaxed">
+                    Repair and cleaning of hot/cold water supply systems, dealing with leakages, pressure tank wiring, and vertical/horizontal heater units.
+                </p>
+                <div class="flex justify-between items-center pt-4 border-t border-slate-50">
+                    <span class="text-xs font-semibold px-2.5 py-1 rounded bg-teal-50 text-teal-600">Heaters & Dispensers</span>
+                    <a href="#booking" onclick="selectServiceOption('Water Dispensers')" class="text-xs font-bold text-teal-600 flex items-center gap-1 hover:underline">
+                        <span>Book Now</span>
+                        <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Service 6: Comprehensive Support -->
+            <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                <div class="w-12 h-12 rounded-xl bg-amber-50 text-amber-600 flex items-center justify-center mb-6">
+                    <i data-lucide="info" class="w-6 h-6"></i>
+                </div>
+                <h3 class="text-xl font-bold mb-3 text-brand-deep">Custom Diagnostic</h3>
+                <p class="text-sm text-slate-600 mb-6 leading-relaxed">
+                    Need support for an unlisted domestic machine or commercial layout? Book this for general technical testing or troubleshooting.
+                </p>
+                <div class="flex justify-between items-center pt-4 border-t border-slate-50">
+                    <span class="text-xs font-semibold px-2.5 py-1 rounded bg-amber-50 text-amber-600">Other Home Equipment</span>
+                    <a href="#booking" onclick="selectServiceOption('Other / Custom Diagnostics')" class="text-xs font-bold text-amber-600 flex items-center gap-1 hover:underline">
+                        <span>Book Now</span>
+                        <i data-lucide="chevron-right" class="w-3.5 h-3.5"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Repair Gallery Section -->
+    <section id="gallery" class="py-24 bg-slate-100 border-t border-b border-slate-200/60 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-3xl mx-auto mb-12 space-y-4">
+                <h2 class="text-xs font-bold uppercase tracking-wider text-brand-primary">Technical Showcase</h2>
+                <p class="text-3xl sm:text-4xl font-extrabold text-brand-deep">Recently Restored Appliances</p>
+                <p class="text-slate-600">Explore visual summaries of actual client diagnostics. Real engineering fixes, prompt cycle resolutions, and optimized thermal configurations.</p>
+                
+                <!-- Category Filter Tabs -->
+                <div class="flex flex-wrap justify-center gap-2 pt-4">
+                    <button onclick="filterGallery(event, 'all')" class="gallery-tab-btn active px-4 py-2 text-xs font-bold rounded-full bg-brand-primary text-white border border-brand-primary transition-all">
+                        All Repairs
+                    </button>
+                    <button onclick="filterGallery(event, 'cooling')" class="gallery-tab-btn px-4 py-2 text-xs font-bold rounded-full bg-white text-slate-600 border border-slate-200 hover:border-brand-primary hover:text-brand-primary transition-all">
+                        Cooling & Refrigeration
+                    </button>
+                    <button onclick="filterGallery(event, 'washers')" class="gallery-tab-btn px-4 py-2 text-xs font-bold rounded-full bg-white text-slate-600 border border-slate-200 hover:border-brand-primary hover:text-brand-primary transition-all">
+                        Washing Machines
+                    </button>
+                    <button onclick="filterGallery(event, 'cooking')" class="gallery-tab-btn px-4 py-2 text-xs font-bold rounded-full bg-white text-slate-600 border border-slate-200 hover:border-brand-primary hover:text-brand-primary transition-all">
+                        Ovens & Heaters
+                    </button>
+                </div>
+            </div>
+
+            <!-- Gallery Cards Grid (Mockup/Illustration placeholder layout) -->
+            <div id="gallery-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Gallery Item 1: Samsung Fridge -->
+                <div class="gallery-item cooling bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-200 hover:shadow-lg transition-all duration-300">
+                    <div class="relative bg-slate-900 h-52 flex items-center justify-center overflow-hidden">
+                        <img src="images/samsung-fridge.jpg" alt="Samsung refrigerator repair with cooling system inspection" class="absolute inset-0 w-full h-full object-cover z-0" onerror="this.onerror=null; this.src='https://placehold.co/600x400/0f172a/38bdf8?text=Samsung+Fridge+Restoration';">
+                        
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent z-10"></div>
+                        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#ffffff_1px,transparent_1px)] [background-size:12px_12px] z-10"></div>
+                        
+                        <!-- Details on top -->
+                        <div class="text-center text-white z-20 px-4">
+                            <i data-lucide="thermometer-snowflake" class="w-12 h-12 text-sky-400 mx-auto mb-2 animate-pulse"></i>
+                            <span class="block text-sm font-bold tracking-wide uppercase">Samsung Double-Door</span>
+                            <span class="text-[10px] text-slate-300 font-medium">Digital Inverter Technology</span>
+                        </div>
+                        <span class="absolute top-3 left-3 z-30 bg-sky-500 text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">Cooling</span>
+                    </div>
+                    <div class="p-6 space-y-4">
+                        <h4 class="text-lg font-bold text-brand-deep">Refrigeration Overhaul</h4>
+                        
+                        <div class="grid grid-cols-2 gap-3 pt-2 text-xs">
+                            <div class="bg-rose-50 border border-rose-100 rounded-lg p-2.5">
+                                <span class="block text-[10px] uppercase font-bold text-rose-500 mb-0.5">Symptom</span>
+                                <span class="font-medium text-slate-700">Not cooling, clicking compressor sound</span>
+                            </div>
+                            <div class="bg-emerald-50 border border-emerald-100 rounded-lg p-2.5">
+                                <span class="block text-[10px] uppercase font-bold text-emerald-500 mb-0.5">Resolved</span>
+                                <span class="font-medium text-slate-700">Relay replaced, system gas recharged</span>
+                            </div>
+                        </div>
+
+                        <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
+                            <span class="text-xs text-slate-500">Service: 1-hour onsite</span>
+                            <button onclick="requestGalleryService('Refrigeration & Cooling Systems', 'Samsung Double-Door Fridge with compressor clicking and cooling issues')" class="text-xs font-bold text-brand-primary hover:text-sky-700 inline-flex items-center gap-1">
+                                <span>Request Similar Fix</span>
+                                <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 2: LG Washing Machine -->
+                <div class="gallery-item washers bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-200 hover:shadow-lg transition-all duration-300">
+                    <div class="relative bg-slate-900 h-52 flex items-center justify-center overflow-hidden">
+                        <img src="images/lg-washer.jpg" alt="LG washing machine repair with drum and cycle diagnostics" class="absolute inset-0 w-full h-full object-cover z-0" onerror="this.onerror=null; this.src='https://placehold.co/600x400/0f172a/a78bfa?text=LG+Washer+Calibration';">
+                        
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent z-10"></div>
+                        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#ffffff_1px,transparent_1px)] [background-size:12px_12px] z-10"></div>
+                        <div class="text-center text-white z-20 px-4">
+                            <i data-lucide="cog" class="w-12 h-12 text-violet-400 mx-auto mb-2"></i>
+                            <span class="block text-sm font-bold tracking-wide uppercase">LG Front Load 9KG</span>
+                            <span class="text-[10px] text-slate-300 font-medium">Direct Drive Motor</span>
+                        </div>
+                        <span class="absolute top-3 left-3 z-30 bg-violet-600 text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">Washers</span>
+                    </div>
+                    <div class="p-6 space-y-4">
+                        <h4 class="text-lg font-bold text-brand-deep">Washing Machine Calibration</h4>
+                        
+                        <div class="grid grid-cols-2 gap-3 pt-2 text-xs">
+                            <div class="bg-rose-50 border border-rose-100 rounded-lg p-2.5">
+                                <span class="block text-[10px] uppercase font-bold text-rose-500 mb-0.5">Symptom</span>
+                                <span class="font-medium text-slate-700">Extreme vibration on spin cycle, PE error</span>
+                            </div>
+                            <div class="bg-emerald-50 border border-emerald-100 rounded-lg p-2.5">
+                                <span class="block text-[10px] uppercase font-bold text-emerald-500 mb-0.5">Resolved</span>
+                                <span class="font-medium text-slate-700">Shock absorbers calibrated, pressure switch fixed</span>
+                            </div>
+                        </div>
+
+                        <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
+                            <span class="text-xs text-slate-500">Service: Domestic Repair</span>
+                            <button onclick="requestGalleryService('Washing Machines & Dryers', 'LG Front Load 9KG with high vibrations on spin cycle and PE error')" class="text-xs font-bold text-violet-600 hover:text-violet-800 inline-flex items-center gap-1">
+                                <span>Request Similar Fix</span>
+                                <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 3: Bosch Oven -->
+                <div class="gallery-item cooking bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-200 hover:shadow-lg transition-all duration-300">
+                    <div class="relative bg-slate-900 h-52 flex items-center justify-center overflow-hidden">
+                        <img src="images/bosch-oven.jpg" alt="Bosch oven repair and calibration service" class="absolute inset-0 w-full h-full object-cover z-0" onerror="this.onerror=null; this.src='https://placehold.co/600x400/0f172a/f97316?text=Bosch+Oven+Calibration';">
+                        
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent z-10"></div>
+                        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#ffffff_1px,transparent_1px)] [background-size:12px_12px] z-10"></div>
+                        <div class="text-center text-white z-20 px-4">
+                            <i data-lucide="flame" class="w-12 h-12 text-orange-400 mx-auto mb-2"></i>
+                            <span class="block text-sm font-bold tracking-wide uppercase">Bosch Series 4 Oven</span>
+                            <span class="text-[10px] text-slate-300 font-medium">Built-In Convection Chamber</span>
+                        </div>
+                        <span class="absolute top-3 left-3 z-30 bg-orange-500 text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">Cooking</span>
+                    </div>
+                    <div class="p-6 space-y-4">
+                        <h4 class="text-lg font-bold text-brand-deep">Thermostat Calibration</h4>
+                        
+                        <div class="grid grid-cols-2 gap-3 pt-2 text-xs">
+                            <div class="bg-rose-50 border border-rose-100 rounded-lg p-2.5">
+                                <span class="block text-[10px] uppercase font-bold text-rose-500 mb-0.5">Symptom</span>
+                                <span class="font-medium text-slate-700">Oven heats up unevenly, shuts down early</span>
+                            </div>
+                            <div class="bg-emerald-50 border border-emerald-100 rounded-lg p-2.5">
+                                <span class="block text-[10px] uppercase font-bold text-emerald-500 mb-0.5">Resolved</span>
+                                <span class="font-medium text-slate-700">Coil element replaced, thermostat calibrated</span>
+                            </div>
+                        </div>
+
+                        <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
+                            <span class="text-xs text-slate-500">Service: Elements Overhaul</span>
+                            <button onclick="requestGalleryService('Cookers, Ovens & Microwaves', 'Bosch Built-in Oven heating unevenly and shutting down early')" class="text-xs font-bold text-brand-accent hover:text-orange-700 inline-flex items-center gap-1">
+                                <span>Request Similar Fix</span>
+                                <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 4: Copeland Cold Room -->
+                <div class="gallery-item cooling bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-200 hover:shadow-lg transition-all duration-300">
+                    <div class="relative bg-slate-900 h-52 flex items-center justify-center overflow-hidden">
+                        <img src="images/cold-room.jpg" alt="Cold room repair for Copeland refrigeration compressor" class="absolute inset-0 w-full h-full object-cover z-0" onerror="this.onerror=null; this.src='https://placehold.co/600x400/0f172a/38bdf8?text=Copeland+Cold+Room';">
+                        
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent z-10"></div>
+                        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#ffffff_1px,transparent_1px)] [background-size:12px_12px] z-10"></div>
+                        <div class="text-center text-white z-20 px-4">
+                            <i data-lucide="wind" class="w-12 h-12 text-blue-400 mx-auto mb-2"></i>
+                            <span class="block text-sm font-bold tracking-wide uppercase">Copeland Cold Room</span>
+                            <span class="text-[10px] text-slate-300 font-medium">Commercial 5HP Unit</span>
+                        </div>
+                        <span class="absolute top-3 left-3 z-30 bg-sky-500 text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">Cooling</span>
+                    </div>
+                    <div class="p-6 space-y-4">
+                        <h4 class="text-lg font-bold text-brand-deep">Evaporator Cleanse & Re-Gas</h4>
+                        
+                        <div class="grid grid-cols-2 gap-3 pt-2 text-xs">
+                            <div class="bg-rose-50 border border-rose-100 rounded-lg p-2.5">
+                                <span class="block text-[10px] uppercase font-bold text-rose-500 mb-0.5">Symptom</span>
+                                <span class="font-medium text-slate-700">Temperature stuck at +8°C, heavy coil icing</span>
+                            </div>
+                            <div class="bg-emerald-50 border border-emerald-100 rounded-lg p-2.5">
+                                <span class="block text-[10px] uppercase font-bold text-emerald-500 mb-0.5">Resolved</span>
+                                <span class="font-medium text-slate-700">Defrost timer replaced, full refrigerant recharge</span>
+                            </div>
+                        </div>
+
+                        <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
+                            <span class="text-xs text-slate-500">Service: Commercial Repair</span>
+                            <button onclick="requestGalleryService('Refrigeration & Cooling Systems', 'Copeland Commercial Cold Room stuck at +8C with heavy coil icing')" class="text-xs font-bold text-brand-primary hover:text-sky-700 inline-flex items-center gap-1">
+                                <span>Request Similar Fix</span>
+                                <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 5: Samsung EcoBubble -->
+                <div class="gallery-item washers bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-200 hover:shadow-lg transition-all duration-300">
+                    <div class="relative bg-slate-900 h-52 flex items-center justify-center overflow-hidden">
+                        <img src="images/samsung-washer.jpg" alt="Samsung EcoBubble washing machine service" class="absolute inset-0 w-full h-full object-cover z-0" onerror="this.onerror=null; this.src='https://placehold.co/600x400/0f172a/2dd4bf?text=Samsung+EcoBubble';">
+                        
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent z-10"></div>
+                        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#ffffff_1px,transparent_1px)] [background-size:12px_12px] z-10"></div>
+                        <div class="text-center text-white z-20 px-4">
+                            <i data-lucide="settings" class="w-12 h-12 text-teal-400 mx-auto mb-2"></i>
+                            <span class="block text-sm font-bold tracking-wide uppercase">Samsung EcoBubble</span>
+                            <span class="text-[10px] text-slate-300 font-medium">8KG Digital Inverter</span>
+                        </div>
+                        <span class="absolute top-3 left-3 z-30 bg-violet-600 text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">Washers</span>
+                    </div>
+                    <div class="p-6 space-y-4">
+                        <h4 class="text-lg font-bold text-brand-deep">Drain System Overhaul</h4>
+                        
+                        <div class="grid grid-cols-2 gap-3 pt-2 text-xs">
+                            <div class="bg-rose-50 border border-rose-100 rounded-lg p-2.5">
+                                <span class="block text-[10px] uppercase font-bold text-rose-500 mb-0.5">Symptom</span>
+                                <span class="font-medium text-slate-700">Water fails to drain, OE code on panel</span>
+                            </div>
+                            <div class="bg-emerald-50 border border-emerald-100 rounded-lg p-2.5">
+                                <span class="block text-[10px] uppercase font-bold text-emerald-500 mb-0.5">Resolved</span>
+                                <span class="font-medium text-slate-700">Debris filter cleared, new 30W drain pump installed</span>
+                            </div>
+                        </div>
+
+                        <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
+                            <span class="text-xs text-slate-500">Service: Quick Response</span>
+                            <button onclick="requestGalleryService('Washing Machines & Dryers', 'Samsung EcoBubble 8KG failing to drain with OE error code')" class="text-xs font-bold text-violet-600 hover:text-violet-800 inline-flex items-center gap-1">
+                                <span>Request Similar Fix</span>
+                                <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery Item 6: Ramtons Cooker -->
+                <div class="gallery-item cooking bg-white rounded-2xl overflow-hidden shadow-sm border border-slate-200 hover:shadow-lg transition-all duration-300">
+                    <div class="relative bg-slate-900 h-52 flex items-center justify-center overflow-hidden">
+                        <img src="images/ramtons-cooker.jpg" alt="Ramtons cooker repair with gas burner and hotplate service" class="absolute inset-0 w-full h-full object-cover z-0" onerror="this.onerror=null; this.src='https://placehold.co/600x400/0f172a/eab308?text=Ramtons+Cooker';">
+                        
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent z-10"></div>
+                        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#ffffff_1px,transparent_1px)] [background-size:12px_12px] z-10"></div>
+                        <div class="text-center text-white z-20 px-4">
+                            <i data-lucide="droplet" class="w-12 h-12 text-yellow-500 mx-auto mb-2"></i>
+                            <span class="block text-sm font-bold tracking-wide uppercase">Ramtons Standing Cooker</span>
+                            <span class="text-[10px] text-slate-300 font-medium">3 Gas + 1 Electric Plate</span>
+                        </div>
+                        <span class="absolute top-3 left-3 z-30 bg-orange-500 text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">Cooking</span>
+                    </div>
+                    <div class="p-6 space-y-4">
+                        <h4 class="text-lg font-bold text-brand-deep">Gas Jets & Hotplate Tune-up</h4>
+                        
+                        <div class="grid grid-cols-2 gap-3 pt-2 text-xs">
+                            <div class="bg-rose-50 border border-rose-100 rounded-lg p-2.5">
+                                <span class="block text-[10px] uppercase font-bold text-rose-500 mb-0.5">Symptom</span>
+                                <span class="font-medium text-slate-700">Weak yellow gas flame, electric plate dead</span>
+                            </div>
+                            <div class="bg-emerald-50 border border-emerald-100 rounded-lg p-2.5">
+                                <span class="block text-[10px] uppercase font-bold text-emerald-500 mb-0.5">Resolved</span>
+                                <span class="font-medium text-slate-700">Gas jets cleaned, hotplate wiring renewed</span>
+                            </div>
+                        </div>
+
+                        <div class="pt-4 border-t border-slate-100 flex items-center justify-between">
+                            <span class="text-xs text-slate-500">Service: Gas & Electric System</span>
+                            <button onclick="requestGalleryService('Cookers, Ovens & Microwaves', 'Ramtons Standing Cooker with weak yellow flame and dead electric hotplate')" class="text-xs font-bold text-brand-accent hover:text-orange-700 inline-flex items-center gap-1">
+                                <span>Request Similar Fix</span>
+                                <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Booking & WhatsApp Request Form -->
+    <section id="booking" class="py-24 bg-slate-100 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto bg-white rounded-3xl shadow-xl overflow-hidden border border-slate-200 grid grid-cols-1 md:grid-cols-12">
+            
+            <!-- Left descriptive panel -->
+            <div class="md:col-span-5 bg-gradient-to-br from-brand-deep to-slate-900 text-white p-8 sm:p-12 flex flex-col justify-between font-medium">
+                <div class="space-y-6">
+                    <span class="text-xs font-semibold text-brand-primary uppercase tracking-wider">Fast-track Booking</span>
+                    <h3 class="text-2xl sm:text-3xl font-extrabold leading-tight">Send Your Request Instantly</h3>
+                    <p class="text-xs text-slate-300 leading-relaxed font-light">
+                        Fill in your appliance issues. Selecting a service dynamically populates an automated request form. Click submit to dispatch details directly to our field technician on WhatsApp.
+                    </p>
+                </div>
+                
+                <div class="mt-8 pt-8 border-t border-white/10 space-y-4">
+                    <div class="flex items-center gap-3">
+                        <div class="w-8 h-8 rounded-full bg-emerald-500/15 flex items-center justify-center text-emerald-400">
+                            <i data-lucide="message-square" class="w-4 h-4"></i>
+                        </div>
+                        <span class="text-xs text-slate-200">Instant WhatsApp routing</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <div class="w-8 h-8 rounded-full bg-sky-500/15 flex items-center justify-center text-sky-400">
+                            <i data-lucide="shield-check" class="w-4 h-4"></i>
+                        </div>
+                        <span class="text-xs text-slate-200">No hidden middleman fees</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right functional input form -->
+            <form id="whatsappForm" onsubmit="handleFormSubmit(event)" class="md:col-span-7 p-8 sm:p-12 space-y-6">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div>
+                        <label for="client_name" class="block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-2">Your Name *</label>
+                        <input type="text" id="client_name" required placeholder="e.g. Kelvin Otieno" class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:outline-none focus:ring-2 focus:ring-brand-primary focus:border-transparent text-sm transition">
+                    </div>
+                    <div>
+                        <label for="client_phone" class="block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-2">Phone Number *</label>
+                        <input type="tel" id="client_phone" required placeholder="e.g. 07XXXXXXXX" class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:outline-none focus:ring-2 focus:ring-brand-primary focus:border-transparent text-sm transition font-medium">
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div>
+                        <label for="client_location" class="block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-2">Your Location *</label>
+                        <input type="text" id="client_location" required placeholder="e.g. Lang'ata, Nairobi" class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:outline-none focus:ring-2 focus:ring-brand-primary focus:border-transparent text-sm transition">
+                    </div>
+                    <div>
+                        <label for="service_type" class="block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-2">Service Type *</label>
+                        <select id="service_type" required class="w-full px-4 py-3 rounded-lg border border-slate-200 bg-white focus:outline-none focus:ring-2 focus:ring-brand-primary focus:border-transparent text-sm transition">
+                            <option value="" disabled selected>Select from list...</option>
+                            <option value="Refrigeration & Cooling Systems">Refrigeration & Cooling Systems</option>
+                            <option value="Washing Machines & Dryers">Washing Machines & Dryers</option>
+                            <option value="Cookers, Ovens & Microwaves">Cookers, Ovens & Microwaves</option>
+                            <option value="Air Conditioners & AC Units">Air Conditioners & AC Units</option>
+                            <option value="Water Dispensers">Water Heaters & Dispensers</option>
+                            <option value="Other / Custom Diagnostics">Other / Custom Diagnostics</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div>
+                    <label for="client_desc" class="block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-2">Describe the Problem *</label>
+                    <textarea id="client_desc" rows="3" required placeholder="Explain symptoms (e.g., fridge compressor won't kick in, washing machine leaks during spin)..." class="w-full px-4 py-3 rounded-lg border border-slate-200 focus:outline-none focus:ring-2 focus:ring-brand-primary focus:border-transparent text-sm transition"></textarea>
+                </div>
+
+                <div class="pt-4">
+                    <button type="submit" class="w-full inline-flex items-center justify-center px-6 py-4 rounded-xl text-base font-bold bg-emerald-500 hover:bg-emerald-600 text-white transition-all transform hover:-translate-y-0.5 shadow-lg shadow-emerald-500/20 gap-2">
+                        <i data-lucide="message-square" class="w-5 h-5"></i>
+                        <span>Send Request on WhatsApp</span>
+                    </button>
+                    <p class="text-[10px] text-center text-slate-400 mt-2">
+                        We respect your privacy. Submitting loads WhatsApp directly with your pre-filled inquiry message.
+                    </p>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 bg-white px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            
+            <!-- Left side visual card -->
+            <div class="relative">
+                <div class="absolute -top-4 -left-4 w-72 h-72 bg-brand-primary/10 rounded-3xl -z-10 blur-xl"></div>
+                <div class="border border-slate-200 rounded-3xl bg-slate-50 p-8 shadow-sm">
+                    <h3 class="text-2xl font-extrabold text-brand-deep mb-4">Why Trust Otiende</h3>
+                    <p class="text-sm text-slate-600 leading-relaxed mb-6">
+                        We treat your domestic environment and commercial floor with absolute care and respect. Over the years, we have mastered complex circuits, cooling thermodynamics, and structural engineering to deliver repairs that stand the test of time.
+                    </p>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="p-4 bg-white rounded-2xl border border-slate-100">
+                            <span class="block text-3xl font-bold text-brand-primary mb-1">250+</span>
+                            <span class="text-xs text-slate-500 uppercase tracking-wider font-semibold">Problems Diagnosed</span>
+                        </div>
+                        <div class="p-4 bg-white rounded-2xl border border-slate-100">
+                            <span class="block text-3xl font-bold text-emerald-500 mb-1">100%</span>
+                            <span class="text-xs text-slate-500 uppercase tracking-wider font-semibold">Reliable Delivery</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right side copy text (Using User's exact prompt description) -->
+            <div class="space-y-6">
+                <span class="text-xs font-bold uppercase tracking-wider text-brand-primary">Our Story & Mission</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-brand-deep leading-tight">Professionalism, Fast Response & Affordable Pricing</h2>
+                <div class="space-y-4 text-slate-600 leading-relaxed text-sm">
+                    <p>
+                        Welcome to <strong>Otiende Appliance Repair & Cooling Systems</strong>, your trusted solution for professional appliance repair, refrigeration, and cooling system services. We specialize in the diagnosis, maintenance, installation, and repair of domestic and commercial appliances to ensure maximum efficiency and long-lasting performance.
+                    </p>
+                    <p>
+                        Our services include repair and servicing of washing machines, refrigerators, freezers, cookers, microwaves, dryers, water dispensers, and other household appliances. We also handle cooling systems such as air conditioners, cold rooms, and refrigeration units, offering reliable solutions for homes, businesses, hotels, and institutions.
+                    </p>
+                    <p>
+                        At Otiende Appliance Repair & Cooling Systems, we are committed to quality workmanship, fast response, honest service, and customer satisfaction. With technical expertise and experience in electrical and refrigeration systems, we provide dependable services that help customers reduce breakdowns and extend the lifespan of their equipment.
+                    </p>
+                    <p>
+                        We pride ourselves on professionalism, affordable pricing, and delivering efficient solutions tailored to our clients’ needs.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Socials & Connect Bar -->
+    <section class="py-12 bg-slate-900 text-white border-t border-slate-800 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="text-center md:text-left">
+                <h4 class="text-lg font-bold">Connect With Us Across Networks</h4>
+                <p class="text-xs text-slate-400">Get handy maintenance tips, project showcases, and live updates from our official channels.</p>
+            </div>
+            <!-- Social Accounts Grid with Real URLs -->
+            <div class="flex flex-wrap justify-center gap-3">
+                <!-- Facebook -->
+                <a href="https://www.facebook.com/wicklife.wicklife.1" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-lg bg-slate-800 hover:bg-brand-primary/20 hover:text-brand-primary border border-slate-700 transition text-sm font-semibold">
+                    <svg class="w-4 h-4 text-sky-500 fill-current" viewBox="0 0 512 512">
+                        <path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/>
+                    </svg>
+                    <span>Facebook</span>
+                </a>
+                
+                <!-- TikTok (Updated Profile URL) -->
+                <a href="https://www.tiktok.com/@derryrefrigeration?_r=1&_d=efe9jckac53ii4&sec_uid=MS4wLjABAAAA8lYZDBGgiS9DUTaKr7gAzt-jsAEGy7yKqp2CVAPGS5XxxlI8cFetGIxZ-Jm2my15&share_author_id=7508392536374346760&sharer_language=en&source=h5_m&u_code=eke61g913lk08l&timestamp=1779372075&user_id=7508392536374346760&sec_user_id=MS4wLjABAAAA8lYZDBGgiS9DUTaKr7gAzt-jsAEGy7yKqp2CVAPGS5XxxlI8cFetGIxZ-Jm2my15&item_author_type=1&utm_source=whatsapp&utm_campaign=client_share&utm_medium=android&share_iid=7641130206150002450&share_link_id=ce679d04-2892-4e01-bde2-7bc90d8dc0b0&share_app_id=1233&ugbiz_name=ACCOUNT&ug_btm=b8727%2Cb4907&social_share_type=5&enable_checksum=1" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-lg bg-slate-800 hover:bg-rose-500/20 hover:text-rose-400 border border-slate-700 transition text-sm font-semibold">
+                    <svg class="w-4 h-4 text-cyan-400 fill-current" viewBox="0 0 24 24">
+                        <path d="M12.53.02C13.84 0 15.14.01 16.44 0c.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.17-2.89-.74-3.94-1.74-.22-.23-.42-.48-.6-.74-.06 2.72-.01 5.43-.03 8.15-.07 2.26-.71 4.58-2.31 6.22-1.71 1.89-4.39 2.6-6.87 2.05-2.65-.54-4.94-2.58-5.46-5.23-.74-3.44 1.16-7.23 4.54-8.21.84-.26 1.73-.34 2.6-.26V10.5c-1.63-.12-3.32.48-4.27 1.84-.91 1.25-.99 3.01-.27 4.4 1 1.85 3.32 2.64 5.25 1.79 1.1-.47 1.81-1.57 1.82-2.76.01-3.69-.01-7.39-.01-11.09-.59-.02-1.18-.11-1.76-.28-1.54-.48-2.69-1.93-2.91-3.52-.04-.29-.05-.59-.05-.88h4.15z"/>
+                    </svg>
+                    <span>TikTok</span>
+                </a>
+                
+                <!-- Instagram -->
+                <a href="https://www.instagram.com/ochiengwicklife01?igsh=MXVpdnBkMDF2cWY0dQ==" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-lg bg-slate-800 hover:bg-pink-500/20 hover:text-pink-400 border border-slate-700 transition text-sm font-semibold">
+                    <svg class="w-4 h-4 text-pink-500 fill-current" viewBox="0 0 448 512">
+                        <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/>
+                    </svg>
+                    <span>Instagram</span>
+                </a>
+                
+                <!-- X (Twitter) -->
+                <a href="https://x.com/wicklif96137752" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-lg bg-slate-800 hover:bg-slate-750 hover:text-white border border-slate-700 transition text-sm font-semibold">
+                    <svg class="w-4 h-4 text-slate-200 fill-current" viewBox="0 0 24 24">
+                        <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                    </svg>
+                    <span>X (Twitter)</span>
+                </a>
+                
+                <!-- YouTube -->
+                <a href="https://youtube.com/@derryrefrigeration?si=RRFpPk6nGo4krLOm" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-lg bg-slate-800 hover:bg-rose-600/20 hover:text-rose-500 border border-slate-700 transition text-sm font-semibold">
+                    <svg class="w-4 h-4 text-red-500 fill-current" viewBox="0 0 24 24">
+                        <path d="M23.498 6.163a3.003 3.003 0 0 0-2.11-2.107C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.388.511a3.003 3.003 0 0 0-2.11 2.107C0 8.046 0 12 0 12s0 3.954.502 5.837a3.003 3.003 0 0 0 2.11 2.107c1.883.511 9.388.511 9.388.511s7.505 0 9.388-.511a3.003 3.003 0 0 0 2.11-2.107C24 15.954 24 12 24 12s0-3.954-.502-5.837zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                    </svg>
+                    <span>YouTube</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Details & Map Area -->
+    <section id="contact" class="py-24 bg-slate-950 text-slate-300 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12">
+            <!-- Col 1: Contacts -->
+            <div class="space-y-6">
+                <h4 class="text-white text-lg font-bold">Otiende Appliance Repair</h4>
+                <p class="text-xs text-slate-400 leading-relaxed">
+                    We deliver services directly to your residence, business structure, hotel, or institutional premises. Reach out instantly to coordinate technical callouts.
+                </p>
+                <div class="space-y-3 pt-4">
+                    <a href="tel:0793617935" class="flex items-center gap-3 text-sm hover:text-white transition">
+                        <div class="w-8 h-8 rounded bg-slate-900 border border-slate-800 flex items-center justify-center text-brand-primary">
+                            <i data-lucide="phone" class="w-4 h-4"></i>
+                        </div>
+                        <span>0793617935</span>
+                    </a>
+                    <a href="https://wa.me/254793617935" target="_blank" class="flex items-center gap-3 text-sm hover:text-white transition">
+                        <div class="w-8 h-8 rounded bg-slate-900 border border-slate-800 flex items-center justify-center text-emerald-400">
+                            <i data-lucide="message-square" class="w-4 h-4"></i>
+                        </div>
+                        <span>WhatsApp Quick Dispatch</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Col 2: Services Quick Links -->
+            <div class="space-y-4">
+                <h4 class="text-white text-base font-bold">Featured Machinery Serviced</h4>
+                <ul class="space-y-2 text-xs text-slate-400">
+                    <li>• Washing Machines & Clothes Dryers</li>
+                    <li>• Refrigerators, Deep Freezers & Chillers</li>
+                    <li>• Microwave Ovens & Heat Chambers</li>
+                    <li>• Electric Cookers & Gas Burner Complexes</li>
+                    <li>• Pressure Water Heaters (Horiz & Vert Models)</li>
+                    <li>• Special Air Conditioning Units</li>
+                </ul>
+            </div>
+
+            <!-- Col 3: Direct Quote Advice -->
+            <div class="space-y-4">
+                <h4 class="text-white text-base font-bold">Helpful Customer Tips</h4>
+                <p class="text-xs leading-relaxed text-slate-400">
+                    When choosing a service through our digital diagnostic request dropdown, please specify any model numbers or odd sounds. This allows us to gather the proper technical component stock in advance to fix your system in a single visit!
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Copyright -->
+    <footer class="bg-slate-950 text-slate-500 text-[11px] py-8 border-t border-slate-900 text-center">
+        <p>© 2026 Otiende Appliance Repair & Cooling Systems. All Rights Reserved.</p>
+        <p>Made With ❤ By Evance Kolendi</p>
+        <p>+254704520241</p>
+    </footer>
+
+    <!-- Core Scripting & Interactivity -->
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+
+        // Mobile drawer control logic
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuIcon = document.getElementById('menu-icon');
+
+        if (mobileMenuBtn) {
+            mobileMenuBtn.addEventListener('click', toggleMenu);
+        }
+
+        function toggleMenu() {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.setAttribute('data-lucide', 'menu');
+            } else {
+                menuIcon.setAttribute('data-lucide', 'x');
+            }
+            lucide.createIcons();
+        }
+
+        // Quick service helper selection click handler
+        function selectServiceOption(serviceName) {
+            const serviceDropdown = document.getElementById('service_type');
+            if (serviceDropdown) {
+                serviceDropdown.value = serviceName;
+            }
+        }
+
+        // Gallery Category Filter Functionality
+        function filterGallery(event, category) {
+            // Prevent button default behavior if used inside a form or link context
+            if (event && typeof event.preventDefault === 'function') {
+                event.preventDefault();
+            }
+            // Update active state of tab buttons
+            const tabButtons = document.querySelectorAll('.gallery-tab-btn');
+            tabButtons.forEach(btn => {
+                btn.classList.remove('bg-brand-primary', 'text-white');
+                btn.classList.add('bg-white', 'text-slate-600', 'border-slate-200');
+            });
+
+            // Highlight current button
+            if (event && event.currentTarget) {
+                const activeBtn = event.currentTarget;
+                activeBtn.classList.remove('bg-white', 'text-slate-600', 'border-slate-200');
+                activeBtn.classList.add('bg-brand-primary', 'text-white', 'border-brand-primary');
+            }
+
+            // Filter items
+            const items = document.querySelectorAll('.gallery-item');
+            items.forEach(item => {
+                if (category === 'all' || item.classList.contains(category)) {
+                    item.classList.remove('hidden');
+                } else {
+                    item.classList.add('hidden');
+                }
+            });
+        }
+
+        // Auto-fill form and scroll down when requesting a similar gallery repair
+        function requestGalleryService(serviceName, prefillDetails) {
+            // Select dropdown option
+            selectServiceOption(serviceName);
+
+            // Populate description with details
+            const descField = document.getElementById('client_desc');
+            if (descField) {
+                descField.value = `I am inquiring about a repair similar to the showcase for: ${prefillDetails}. Please provide assistance.`;
+            }
+
+            // Scroll down to booking section
+            const bookingSection = document.getElementById('booking');
+            if (bookingSection) {
+                bookingSection.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+
+        // WhatsApp submit controller (The core business request compiler)
+        function handleFormSubmit(event) {
+            event.preventDefault(); // Prevents page reload
+            
+            // Retrieve data fields
+            const name = document.getElementById('client_name').value.trim();
+            const phone = document.getElementById('client_phone').value.trim();
+            const location = document.getElementById('client_location').value.trim();
+            const service = document.getElementById('service_type').value;
+            const desc = document.getElementById('client_desc').value.trim();
+
+            if (!name || !phone || !location || !service || !desc) {
+                alert('Please fill in all the required booking fields before sending.');
+                return;
+            }
+
+            // Target number: 0793617935 (formatted internationally as 254793617935 for Kenya)
+            const targetPhone = '254793617935';
+
+            // Construct elegant receipt-like inquiry text
+            const textMessage = `🛠️ *NEW REPAIR & SERVICE REQUEST* 🛠️\n` +
+                                `----------------------------------\n` +
+                                `👤 *Customer:* ${name}\n` +
+                                `📞 *Phone:* ${phone}\n` +
+                                `📍 *Location:* ${location}\n` +
+                                `🔧 *Requested Service:* ${service}\n` +
+                                `----------------------------------\n` +
+                                `📝 *Issue Details:*\n${desc}\n` +
+                                `----------------------------------\n` +
+                                `_This request was generated via Otiende Appliance Web Portal._`;
+
+            // URL Encode the string for browser compliance
+            const encodedText = encodeURIComponent(textMessage);
+            
+            // Construct routing URL
+            const whatsappUrl = `https://wa.me/${targetPhone}?text=${encodedText}`;
+
+            // Redirect user to WhatsApp
+            window.open(whatsappUrl, '_blank');
+        }
+    </script>
+</body>
+</html>
