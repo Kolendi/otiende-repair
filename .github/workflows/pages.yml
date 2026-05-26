@@ -29,20 +29,13 @@ jobs:
       - name: Build Tailwind CSS
         run: npm run build
 
-      - name: Prepare Pages publish folder
-        run: |
-          mkdir -p public
-          cp index.html public/index.html
-          cp dist/styles.css public/styles.css
-          cp -R images public/images
-
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v4
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: public
+          path: .
 
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
